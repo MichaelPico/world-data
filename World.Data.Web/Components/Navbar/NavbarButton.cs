@@ -11,6 +11,6 @@
         /// <summary>
         /// Route where the button will redirect
         /// </summary>
-        public string Route { get; set; } = "/";
+        public string Route { get; set; } = "home";
     }
 }

@@ -1,6 +1,6 @@
-﻿@page "/new-york"
+﻿@page "/rome"
 @using World.Data.Web.Components.Navbar
-<h3>New_York</h3>
+<h3>Rome</h3>
 
 @code {
     [CascadingParameter]
@@ -9,8 +9,8 @@
     protected override async Task OnInitializedAsync()
     {
         navbarState.BuildNavbar("World Data");
-        navbarState.AddNavbarInput(new NavbarButton() { Name = "Home", Route = "/", Active = true });
+        navbarState.AddNavbarInput(new NavbarButton() { Name = "Home", Route = "home", Active = false });
         navbarState.AddNavbarInput(new NavbarButton() { Name = "New York", Route = "new-york", Active = false });
-        navbarState.AddNavbarInput(new NavbarButton() { Name = "Rome", Route = "rome", Active = false });
+        navbarState.AddNavbarInput(new NavbarButton() { Name = "Rome", Route = "rome", Active = true });
     }
 }
