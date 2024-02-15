@@ -29,7 +29,7 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-JAX84ArVHTeMv3st\/yyzgB8BcKWVvSRN0PFmVorfjPg=",
+      "hash": "sha256-WhAIv1EXJJ+T2m7niecMLMh0BkvvSI25+4+KRLldvQY=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -141,7 +141,7 @@
       "url": "_framework\/System.Text.Json.dll"
     },
     {
-      "hash": "sha256-jf3yDzhMJjdIQLB6o43yz6pcIqg5r\/+00P7cSDGKwTg=",
+      "hash": "sha256-W5M0+HKXhvc\/wNkyL+Deqdgk8sKotEiQGesQBLLa5IQ=",
       "url": "_framework\/World.Data.Web.dll"
     },
     {
@@ -165,5 +165,5 @@
       "url": "manifest.json"
     }
   ],
-  "version": "HhXSmOh2"
+  "version": "VeHGvtxi"
 };
