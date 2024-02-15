@@ -36,7 +36,7 @@ jobs:
 
     # changes the base-tag in index.html from '/' to 'us-presidential-election' to match GitHub Pages repository subdirectory
     - name: Change base-tag in index.html from / to us-presidential-election
-      run: sed -i 's/<base href="\/" \/>/<base href="\/us-presidential-election\/" \/>/g' ./web-release/wwwroot/index.html
+      run: sed -i 's/<base href="\/" \/>/<base href="\/world-data\/" \/>/g' ./web-release/wwwroot/index.html
 
     # Commit to gh-pages in order to host the web app
     - name: Deploy to GitHub Pages
