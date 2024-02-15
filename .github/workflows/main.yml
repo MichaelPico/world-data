@@ -34,10 +34,6 @@ jobs:
     - name: Publish the Web App
       run: dotnet publish ./World.Data.Web/World.Data.Web.csproj -c Release -o ./web-release --nologo
 
-    # changes the base-tag in index.html from '/' to 'us-presidential-election' to match GitHub Pages repository subdirectory
-    - name: Change base-tag in index.html from / to us-presidential-election
-      run: sed -i 's/<base href="\/" \/>/<base href="\/world-data\/" \/>/g' ./web-release/wwwroot/index.html
-
     # Commit to gh-pages in order to host the web app
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-github-pages@v3.1.12
