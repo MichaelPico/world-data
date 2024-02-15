@@ -1,7 +1,7 @@
 {
   "entryAssembly": "World.Data.Web",
   "resources": {
-    "hash": "sha256-fZMMcihiPtz26isk/aVIhJYJYIUbZfkuKgkvxFJsvbA=",
+    "hash": "sha256-9xlQAqRRrd8Q4wG1A46Zpu78Pcjz0uEGmup6NtPFTuM=",
     "runtime": {
       "dotnet.7.0.16.i1aadeothk.js": "sha256-4BiArKugJJtpQrznGF5zWfmJ2TB98+p6rKsyoqhtMk4=",
       "dotnet.timezones.blat": "sha256-rwyJqJu36keQwNmm/O1XV7tnkkVldIOK8GIjn4gTUt4=",
@@ -38,7 +38,7 @@
       "System.Runtime.InteropServices.JavaScript.dll": "sha256-DwQxV7PGZwEnxegxCQKkpS7U755NUxSkhUQPa0vhhv4=",
       "System.Text.Encodings.Web.dll": "sha256-JtlNCowjopqTFgu6Q8JsFOjb+KguYBrCOZj5ITmDggc=",
       "System.Text.Json.dll": "sha256-3Xz8GaT9piqvmyx3cThR7Z3Kyl7gFnHIxDlQv7FUL9k=",
-      "World.Data.Web.dll": "sha256-W5M0+HKXhvc/wNkyL+Deqdgk8sKotEiQGesQBLLa5IQ="
+      "World.Data.Web.dll": "sha256-99p24RRKNvB8jOJtxTPrFbmp4Ml7guFICNPYwXXX3AQ="
     },
     "runtimeAssets": {
       "dotnet.wasm": {
