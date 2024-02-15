@@ -1,0 +1,25 @@
+﻿@page "/"
+@using World.Data.Web.Components.Navbar
+@using static World.Data.Web.Shared.NavbarCascadingState
+
+<h1>Hello, world!</h1>
+
+@code {
+    [CascadingParameter]
+    public NavbarCascadingState navbarState { get; set; } = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        navbarState.BuildNavbar("World Data");
+        navbarState.AddNavbarInput(new NavbarButton() { Name = "Home", Route = "/", Active = true });
+        navbarState.AddNavbarInput(new NavbarSelect()
+        {
+            Name = "Cities",
+            Buttons = new List<NavbarButton>()
+            {
+                new NavbarButton() { Name = "New York", Route = "/new-york", Active = false },
+                new NavbarButton() { Name = "Rome", Route = "/rome", Active = false }
+            }
+        });
+    }
+}
