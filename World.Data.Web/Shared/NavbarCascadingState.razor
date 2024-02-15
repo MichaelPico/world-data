@@ -1,0 +1,53 @@
+﻿@using World.Data.Web.Components.Navbar
+@inject NavigationManager navManager
+
+<CascadingValue Value="this">
+    @ChildContent
+</CascadingValue>
+
+
+@code {
+
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+
+    public string Title { get; private set; }
+
+    public List<INavbarInput> Inputs { get; private set; }
+
+    public void BuildNavbar(string title){
+        this.Title = title;
+        this.Inputs = new List<INavbarInput>();
+        StateHasChanged();
+    }
+
+    public void AddNavbarInput(INavbarInput input)
+    {
+        this.Inputs.Add(input);
+        StateHasChanged();
+    }
+
+    public void SelectActiveButton(string name)
+    {
+        foreach(var input in Inputs)
+        {
+            if(input is NavbarButton)
+            {
+                if (input.Name.Equals(name))
+                {
+                    ((NavbarButton)input).Active = true;
+                } else
+                {
+                    ((NavbarButton)input).Active = false;
+                }
+            }
+        }
+    }
+
+    public void NavigateTo(string route)
+    {
+        navManager.NavigateTo(route);
+    }
+
+
+}
